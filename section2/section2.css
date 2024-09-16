@@ -1,4 +1,5 @@
 .section2 {
+
     height: 80vh;
     width: 100%;
     background-color: #e7e4d8;
@@ -332,7 +333,7 @@
 @media screen and (max-width:1200px) {
 
     .section2 {
-
+        margin-top: 80px;
         flex-direction: column;
         height: auto;
 
@@ -352,6 +353,12 @@
 
     .section2 .part1 .title h1 {
         font-size: 3rem;
+
+    }
+
+    .section2 .part1 .title h1 span {
+        height: 18px;
+        width: 18px;
 
     }
 

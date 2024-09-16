@@ -174,7 +174,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    --afterwidth: 200%;
+    --afterwidth: 0%;
     margin: 1px;
     position: relative;
 
