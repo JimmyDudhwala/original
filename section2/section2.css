@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    overflow: hidden;
 }
 
 .section2 .part1 {
@@ -258,9 +258,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.subsec2 .librariesTitle{
+.subsec2 .librariesTitle {
     position: relative;
     color: red;
     z-index: 10;
@@ -269,14 +270,16 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    margin-bottom:10px  ;
-    
+    margin-bottom: 10px;
+
 }
-.subsec2 .librariesTitle h1{
+
+.subsec2 .librariesTitle h1 {
     font-size: 2rem;
     color: red;
     z-index: 10;
 }
+
 .subsec2 .container {
     height: 50%;
     min-width: 100vw;
@@ -301,20 +304,22 @@
     content: '';
     position: absolute;
     top: 0;
-    width: 60px; /* Adjust width as needed */
+    width: 60px;
+    /* Adjust width as needed */
     height: 100%;
     z-index: 3;
 }
 
 .subsec2 .shadowConatiner::before {
     left: 0;
-    background: linear-gradient(90deg, rgba(244,0,0,1) 0%, rgba(0,0,0,0) 100%, rgba(0,0,0,0.3246090672597164) 100%);
+    background: linear-gradient(90deg, rgba(244, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.3246090672597164) 100%);
 }
 
 .subsec2 .shadowConatiner::after {
-    right: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(244,0,0,1) 100%, rgba(0,0,0,0.3246090672597164) 100%);
+    right: -1px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(244, 0, 0, 1) 100%, rgba(0, 0, 0, 0.3246090672597164) 100%);
 }
+
 .subsec2 .container .lib {
     height: 100%;
     min-width: 18vw;
@@ -401,7 +406,7 @@
         align-items: center;
     }
 
-    .subsec2 .librariesTitle h1{
+    .subsec2 .librariesTitle h1 {
         margin-top: 10px;
         margin-left: 20px;
         font-size: 1rem;

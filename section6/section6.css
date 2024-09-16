@@ -1,47 +1,49 @@
+.section6 {
 
-
-.section6{
- 
     min-height: 40vh;
     max-height: 50vh;
     width: 100%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     background-color: #000000;
     position: relative;
+
 }
 
-.section6 .part1{
+.section6 .part1 {
     flex: 0.6;
     height: 100%;
     width: 100%;
     display: flex;
-   
+
     justify-content: space-between;
     align-items: center;
-  
+
     position: relative;
-   
+
 }
-.section6 .part1 .division1 div:nth-child(1){
+
+.section6 .part1 .division1 div:nth-child(1) {
     margin-left: 20px;
-  
+
     font-size: 3rem;
     font-weight: 700;
     color: var(--bg);
 
 }
-.section6 .part1 .division1 div:nth-child(2){
+
+.section6 .part1 .division1 div:nth-child(2) {
     margin-left: 25px;
-  
+
     font-size: 1.1rem;
     font-weight: 200;
     color: var(--bg);
 
-} 
-.section6 .part1 .division1 div:nth-child(3){
+}
+
+.section6 .part1 .division1 div:nth-child(3) {
     margin-left: 25px;
-  
+
     font-size: 2rem;
     font-weight: 200;
     color: var(--bg);
@@ -54,18 +56,18 @@
     height: 100%;
     min-height: 25vh;
     width: 100%;
-   
+
     position: relative;
     overflow: hidden;
     white-space: nowrap;
     color: var(--bg);
-    
+
 }
 
-.section6 .part2 .division1 div:nth-child(1){
-    
-   min-width: 100vw;
-   min-height: 100px;
+.section6 .part2 .division1 div:nth-child(1) {
+
+    min-width: 100vw;
+    min-height: 100px;
     font-size: 180px;
     font-weight: 700;
     white-space: nowrap;
@@ -75,10 +77,10 @@
     position: absolute;
     top: 30px;
     left: 0px;
-    
+
 }
 
-.section6 .part2 .division2 p{
+.section6 .part2 .division2 p {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -88,7 +90,7 @@
 
 }
 
-.section6 .part1 .division2 div{
+.section6 .part1 .division2 div {
     color: var(--bg);
 }
 
@@ -96,38 +98,38 @@
 
     .section6 {
         height: auto;
-        
-     }
- 
-     .section6 .part1 {
-         flex-direction: column;
-         margin-bottom: 20px;
-     }
- 
-     .section6 .part1 .division1 div:nth-child(1){
-         font-size: 2.5rem;
-         white-space: nowrap;
-         margin-left: 0px;
-     }
-     
-     .section6 .part1 .division1 div:nth-child(2){
-         display: flex;
-             justify-content: center;
-             font-size: 1.5rem;
-             margin-top: 20px
- 
-     }
-     .section6 .part1 .division1 div:nth-child(3){
-         display: flex;
-             justify-content: center;
-             
-             margin-top: 20px
- 
-     }
-     .section6 .part2 .division1 div:nth-child(1){
+
+    }
+
+    .section6 .part1 {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .section6 .part1 .division1 div:nth-child(1) {
         font-size: 2.5rem;
-         max-height: 0px;
-         max-width: 0px;
-     }
-    
+        white-space: nowrap;
+        margin-left: 0px;
+    }
+
+    .section6 .part1 .division1 div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-top: 20px
+    }
+
+    .section6 .part1 .division1 div:nth-child(3) {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 20px
+    }
+
+    .section6 .part2 .division1 div:nth-child(1) {
+        font-size: 2.5rem;
+        max-height: 0px;
+        max-width: 0px;
+    }
+
 }

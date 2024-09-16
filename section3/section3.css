@@ -1,15 +1,15 @@
-
 .section3 {
-   
+
     max-height: 80vh;
     width: 100%;
     background-color: #e7e4d8;
     position: relative;
-   
+
 
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .section3 .part1 {
@@ -66,7 +66,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
 }
 
 .section3 .part1 .project .projectContainer .projectSection {
@@ -112,11 +112,11 @@
 
     flex: 0.15;
     height: 100%;
-   
+
     width: 100%;
     background-color: #e7e4d8;
     overflow: hidden;
-    
+
 }
 
 
@@ -130,7 +130,7 @@
     justify-content: center;
     font-size: 5rem;
     font-weight: 700;
-    
+
 
 }
 
@@ -143,7 +143,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .section3 .part2 .projectImage {
@@ -153,7 +153,7 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden !important;
-   
+
 }
 
 .section3 .part2 .projectImage .images {
@@ -164,11 +164,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
 }
 
 .section3 .part2 .projectImage .images img {
-    
+
     z-index: 100 !important;
 }
 
@@ -181,65 +181,66 @@
 }
 
 
-.cursol{
-    height:auto;
-     width: 100%;
-     background-color: black;
-     display: flex;
-     
-     flex-direction: column;
-     margin-bottom: 50px;
-     color: red;
-  
- }
- 
- .cursol .part1{
-     flex:0.5;
-     height: 100%;
-     width: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: end;
- }
- 
- .cursol .part2{
-     flex:0.5;
-     
- }
- 
- .cursol .part2 .swiper {
-     width: 100%;
-     height: 100%;
-   
-    margin-bottom: 50px;
-     
-   }
- 
-   .cursol .part2 .swiper-slide {
-     height: 400px;
-     width: 100px;
-     text-align: center;
-     font-size: 18px;
-     background: #fff;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     border-radius: 15px;
-   }
- 
-   .cursol .part2 .swiper-slide img {
-     display: block;
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     
- 
-   }
- 
+.cursol {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    display: flex;
 
-@media screen and (max-width:1200px) {
-    
-    
+    flex-direction: column;
+    margin-bottom: 50px;
+    color: red;
+    overflow: hidden;
+
+}
+
+.cursol .part1 {
+    flex: 0.5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.cursol .part2 {
+    flex: 0.5;
+
+}
+
+.cursol .part2 .swiper {
+    width: 100%;
+    height: 100%;
+
+    margin-bottom: 50px;
+
+}
+
+.cursol .part2 .swiper-slide {
+    height: 400px;
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.cursol .part2 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+
+@media screen and (max-width:600px) {
+
+
     .section3 {
         top: 5rem;
         flex-direction: column;
@@ -257,7 +258,7 @@
     .section3 .part1 .title {
         flex: 0.01;
         min-height: 55px;
-        /* Adjust this value as needed */
+
         align-items: center;
 
     }
@@ -265,8 +266,10 @@
     .section3 .part1 .title h1 {
         font-size: 3rem;
         transform: rotate(360deg);
-        top: 0px !important;
+        /* Remove relative positioning */
+        top: 0;
     }
+
 
     .section3 .part1 .project {
         flex: 0.99;
@@ -331,24 +334,25 @@
         width: 75vw;
     }
 
-     .pin {
-    height: 100vh !important;
-}
-
-    .pin-spacer {
-        height: 78vh !important;
+    .pin {
+        height: 100vh !important;
     }
 
-    .cursol .swiper{
+    .pin-spacer {
+        height: 60vh !important;
+    }
+
+    .cursol .swiper {
         max-width: 100vw;
         height: 100%;
     }
-    .cursol .swiper-slide{
+
+    .cursol .swiper-slide {
         max-height: 250px;
         min-width: 200px;
     }
 
-    .swiper-pagination{
+    .swiper-pagination {
         visibility: hidden;
     }
 

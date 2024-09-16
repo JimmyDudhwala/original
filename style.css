@@ -146,9 +146,3 @@ div.window3 {
     z-index: 198;
     overflow: hidden;
 }
-
-@media screen and (max-width:1200px) {
-    body {
-        overflow-x: hidden !important;
-    }
-}
