@@ -38,7 +38,7 @@
 
 
 .section4 .part1 .certificationTitle span {
-   
+
 
     overflow: hidden;
 
@@ -46,7 +46,7 @@
     font-weight: 600;
     color: orange;
 
-    
+
 }
 
 
@@ -133,51 +133,59 @@
 
 
 
-.section4 .part2  .expCurs{
+.section4 .part2 .expCurs {
 
-    position: fixed; /* Use fixed to keep the cursor in the correct position relative to the viewport */
+    position: fixed;
+    /* Use fixed to keep the cursor in the correct position relative to the viewport */
     top: 0;
     left: 0;
-    width: 500px; /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
-   
-    background-color: red; /* Change the color as needed */
-    pointer-events: none; /* Ensures the cursor doesn't interfere with other clickable elements */
-    z-index: 3; /* Ensures the cursor is above most other elements */
-    opacity: 0; /* Start hidden, let GSAP control visibility */
-    transform: translate(-10%, -10%); /* Centers the cursor on mouse coordinates */
-    
+    width: 500px;
+    /* Adjust size as needed */
+    height: 300px;
+    /* Adjust size as needed */
+
+    background-color: red;
+    /* Change the color as needed */
+    pointer-events: none;
+    /* Ensures the cursor doesn't interfere with other clickable elements */
+    z-index: 3;
+    /* Ensures the cursor is above most other elements */
+    opacity: 0;
+    /* Start hidden, let GSAP control visibility */
+    transform: translate(-10%, -10%);
+    /* Centers the cursor on mouse coordinates */
+
 
 }
 
-.section4 .part2 .expContainer .exp::before{
+.section4 .part2 .expContainer .exp::before {
     content: "";
     position: absolute;
     height: var(--beforhigth);
     width: 100%;
     background-color: #BD5A42;
-    
+
 }
 
 .section4 .part2 .expContainer .exp {
     width: 100%;
     height: 15vh;
-    --beforhigth:0vh;
+    --beforhigth: 0vh;
     display: flex;
     justify-content: space-between;
     position: relative;
-    --afterwidth:200%;
+    --afterwidth: 200%;
     margin: 1px;
     position: relative;
-   
+
 }
 
 .section4 .part2 .expContainer .exp::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0%; 
-    width: var(--afterwidth); 
+    left: 0%;
+    width: var(--afterwidth);
     height: 3px;
     background-color: rgba(0, 0, 0, 0.807);
     transform: translateX(-50%);
@@ -197,7 +205,7 @@
     font-weight: 600;
     color: rgba(0, 0, 0, 0.903);
     overflow: hidden;
-}  
+}
 
 .section4 .part2 .expContainer .exp .division1 span:nth-child(2) {
     font-size: 1.4rem;
@@ -244,14 +252,16 @@
     z-index: 1;
 }
 
-.followerCanvas{
+.followerCanvas {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 2; /* Canvas is above base and under upper element */
-    background-color: #ff0000; /* Example background color for canvas */
+    z-index: 2;
+    /* Canvas is above base and under upper element */
+    background-color: #ff0000;
+    /* Example background color for canvas */
 }
 
 .subsec4 .AnimatedText {
@@ -266,7 +276,7 @@
 }
 
 @media screen and (max-width:1200px) {
-    
+
     .section4 {
         height: auto;
         flex-direction: column-reverse;
@@ -311,7 +321,10 @@
 
     }
 
-
+    .section4 .part2 .expCurs {
+        height: 180px;
+        width: 250px;
+    }
 
 
 
@@ -355,7 +368,8 @@
 
 
     }
-    .subsec4 div h1{
+
+    .subsec4 div h1 {
         font-size: 3rem;
     }
 }

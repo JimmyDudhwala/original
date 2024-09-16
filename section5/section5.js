@@ -45,3 +45,32 @@ document.querySelector('.section5 .part2 .circle').addEventListener('mouseout', 
   textElementContainer.style.opacity = '0';
   textElementContainer.style.visibility = 'hidden';
 });
+
+var path = "m 0 10 q 0 0 1800 0";
+var fpath = "m 0 10 q 0 0 1800 0";
+var string = document.querySelector('.subsec5');
+
+string.addEventListener('mousemove', (e) => {
+  var rect = string.getBoundingClientRect();
+  var x = e.clientX - rect.left;
+  var y = e.clientY - rect.top;
+  path = `m 0 20 q ${x} ${y} 1800 0`;
+
+  gsap.to('.subsec5 svg path', {
+    attr: {
+      d: path
+    },
+    duration: 0.3,
+    ease: "power4.out"
+  });
+});
+
+string.addEventListener('mouseleave', () => {
+  gsap.to('.subsec5 svg path', {
+    attr: {
+      d: fpath
+    },
+    duration: 2.5,
+    ease: "elastic.out(1,0.1)",
+  });
+});

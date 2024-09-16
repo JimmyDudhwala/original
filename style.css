@@ -49,6 +49,11 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 .custom-cursor {
     width: 25px;
