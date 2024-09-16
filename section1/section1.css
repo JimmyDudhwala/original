@@ -1,0 +1,385 @@
+
+.section1 {
+    
+    height: 80vh;
+    width: 100%;
+    background-color: #ff0000;
+    position: relative;
+    top: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 160px;
+}
+
+.section1 .part1 {
+    flex: 1;
+    background-color: #e7e4d8;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.section1 .part1 img {
+    height: 80%;
+    width: 50%;
+    min-width: 30vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    z-index: 1;
+
+
+}
+.section1 .part1 .imageCover {
+    height: 90%;
+    width: 60%;
+  
+    background: var(--bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+   
+
+
+}
+
+.section1 .part2 {
+    flex: 1;
+    background-color: #e7e4d8;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.section1 .part2 .myInfo {
+    flex: 0.8;
+    width: 100%;
+    height: 100%;
+    background-color: #e7e4d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.section1 .part2 .myInfo .myInfoContainer {
+
+    width: 100%;
+    height: 60%;
+    background-color: #e7e4d8;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section1 .part2 .myInfo .myInfoContainer div {
+    flex: 0.2;
+    width: 100%;
+    
+}
+
+.section1 .part2 .myInfo .myInfoContainer div:nth-child(1) {
+    background-color: #e7e4d8;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: gray;
+
+    
+}
+
+.section1 .part2 .myInfo .myInfoContainer div:nth-child(2) {
+    background-color: #e7e4d8;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: orange;
+}
+
+.section1 .part2 .myInfo .myInfoContainer div:nth-child(3) {
+    background-color: #e7e4d8;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    font-size: 2.3rem;
+    font-weight: 550;
+    color: #524439;
+}
+
+.section1 .part2 .myInfo .myInfoContainer div:nth-child(4) {
+    background-color: #e7e4d8;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.section1 .part2 .myInfo .myInfoContainer div:nth-child(4) button {
+    height: 70%;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 600;
+  
+    background-color: #e7e4d8;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 2;
+    
+}
+
+.section1 .part2 .myInfo .myInfoContainer div:nth-child(5) {
+    background-color: #e7e4d8;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+
+
+.section1 .part2 .myInfo .myInfoContainer div:nth-child(5) span i {
+
+    font-size: 2.2rem;
+    margin: 10px;
+}
+
+
+.section1 .part2 .title {
+    flex: 0.2;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+   
+    
+
+}
+
+.section1 .part2 .title h1 {
+    font-size: 6rem;
+    color: #da3926;
+
+    transform: rotate(-90deg);
+}
+
+.spacer{
+    height: 100vh;
+    background-color: transparent;
+}
+
+/* subsec1 */
+
+
+.subsec1 {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: black; /* Set the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+.subsec1 .myCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.subsec1 .musicContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.musicText {
+    position: relative;
+    font-size: 10rem;
+    font-weight: 700;
+    color: #e7e4d8;
+    z-index: 3;
+}
+.musicBox {
+    position: relative;
+    height: 40vh;
+    width: 28vw;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    margin: 1rem;
+    z-index: 3;
+}
+.musicBox .musicCanvas {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+    .section1 {
+        top: 5rem;
+        flex-direction: column-reverse;
+        height: auto;
+
+    }
+
+    .section1 .part1 {
+
+        width: 100%;
+        min-height: 50vh;
+
+    }
+
+    .section1 .part1 .sqz {
+
+        background-position: 10% 0%;
+       min-height: 300px;
+       min-width: 70vw;
+
+    }
+
+    .section1 .part1 img {
+       
+        min-width: 30vw;
+        max-width: 30vw;
+    
+    }
+
+    .section1 .part1 .imageCover{
+        min-height: 300px;
+        max-width: 80vw;
+        min-width: 30vw;
+    }
+
+
+    .section1 .part2 {
+        width: 100%;
+
+        flex-direction: column-reverse;
+    }
+
+    .section1 .part2 .myInfo {
+        flex: 0.7;
+    }
+
+    .section1 .part2 .myInfo .myInfoContainer {
+        height: 100%;
+    }
+
+
+
+    .section1 .part2 .myInfo .myInfoContainer div:nth-child(1) {
+        flex: 0.1;
+        font-size: 1rem;
+        margin: 1rem 0rem 1px 1rem;
+    }
+    
+    .section1 .part2 .myInfo .myInfoContainer div:nth-child(2) {
+        flex: 0.2;
+        margin: 0rem 0rem 1px 1rem;
+        
+        font-size: 1.8rem;
+    }
+
+    .section1 .part2 .myInfo .myInfoContainer div:nth-child(3) {
+        flex: 0.2;
+        margin: 0rem 0rem 1px 1rem;
+        font-size: 1.5rem;
+    }
+
+    .section1 .part2 .myInfo .myInfoContainer div:nth-child(4) {
+        flex: 0.3;
+
+        justify-content: center;
+    }
+
+    .section1 .part2 .myInfo .myInfoContainer div:nth-child(4) button {
+
+        width: 100%;
+        height: 50px;
+    }
+
+    .section1 .part2 .myInfo .myInfoContainer div:nth-child(5) {
+        flex: 0.2;
+        justify-content: center;
+        font-size: 0.1rem;
+    }
+
+    .section1 .part2 .title {
+        flex: 0.3;
+    }
+
+    .section1 .part2 .title h1 {
+        font-size: 3rem;
+        transform: rotate(360deg);
+    }
+
+    .subsec1{
+        
+        height: 40vh; 
+    }
+    
+  
+    
+  .musicText{
+      
+        font-size: 2rem;
+      
+    }
+    
+   
+    
+ .musicBox{
+       
+       
+        height: 20vh;
+       min-width: 50vw;
+      
+       margin: 0px;
+        
+    }
+
+}

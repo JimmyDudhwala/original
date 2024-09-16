@@ -1,0 +1,410 @@
+.section2 {
+    height: 80vh;
+    width: 100%;
+    background-color: #e7e4d8;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section2 .part1 {
+    flex: 1;
+    background-color: rgb(255, 55, 0);
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.section2 .part1 .mySkill {
+    flex: 0.8;
+    width: 100%;
+    background-color: #e7e4d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.section2 .part1 .mySkill .skillTitle {
+    flex: 0.2;
+    height: 100%;
+    width: 100%;
+    background-color: #e7e4d8;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+
+}
+
+.section2 .part1 .mySkill .skillTitle span {
+    overflow: hidden;
+
+    font-size: 3rem;
+    font-weight: 600;
+    color: orange;
+}
+
+
+.section2 .part1 .skillContainer {
+    flex: 0.9;
+    background-color: #e7e4d8;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .part1 .skillContainer .flip-container {
+    min-width: 8rem;
+    min-height: 8rem;
+    background-color: #0000000e;
+    order: 5;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    z-index: 3;
+    perspective: 1000px;
+}
+
+.flip {
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-front,
+.flip-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    border-radius: 10%;
+}
+
+.flip-front {
+    background-color: #ffd90008;
+    transform: rotateY(0deg);
+}
+
+.flip-back {
+    background-color: rgb(41, 22, 0);
+    color: #ffffff;
+    transform: rotateY(180deg);
+    font-size: large;
+    font-family: poppins;
+    color: #da3926;
+}
+
+.flip-container:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.section2 .part1 .title {
+    flex: 0.2;
+    width: 100%;
+    background-color: #e7e4d8;
+    display: flex;
+}
+
+.section2 .part1 .title h1 {
+    font-size: 6rem;
+    color: #da3926;
+
+}
+
+.section2 .part1 .title h1 span {
+    display: inline-block;
+    justify-content: center;
+    background-color: #da3926;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0px 10px 0px 10px;
+
+    z-index: 10;
+}
+
+.section2 .part2 {
+    flex: 1;
+    background-color: #e7e4d8;
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .part2 .timeline {
+    background-color: #e7e4d8;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section2 .part2 .timeline .year {
+
+    flex: 0.2;
+    height: 100%;
+    background-color: #e7e4d8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.section2 .part2 .timeline .liti {
+    flex: 0.1;
+    background-color: #333;
+    width: 1px;
+    height: 7px;
+
+}
+
+
+.section2 .part2 .timeline .dot {
+    flex: 0.1;
+    height: 100%;
+
+    background-color: #e7e4d8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section2 .part2 .timeline .dot span {
+    height: 20%;
+    width: 50%;
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background-color: #280000;
+}
+
+.section2 .part2 .timeline .yearInfo {
+    flex: 0.6;
+    height: 100%;
+    max-width: 100%;
+    background-color: var(--bg);
+    font-size: 1.2rem;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.section2 .part2 .timeline .yearInfo .upsider {
+    height: 100%;
+    width: 100%;
+    top: 150px;
+    position: absolute;
+    background-color: orange;
+}
+
+.section2 .part2 .timeline .yearInfo p {
+    position: relative;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #280000;
+
+    padding: 10px;
+}
+
+
+/* subsec2 */
+
+.subsec2 {
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subsec2 .librariesTitle{
+    position: relative;
+    color: red;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom:10px  ;
+    
+}
+.subsec2 .librariesTitle h1{
+    font-size: 2rem;
+    color: red;
+    z-index: 10;
+}
+.subsec2 .container {
+    height: 50%;
+    min-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    background-color: black;
+}
+
+.subsec2 .shadowConatiner {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.subsec2 .shadowConatiner::before,
+.subsec2 .shadowConatiner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 60px; /* Adjust width as needed */
+    height: 100%;
+    z-index: 3;
+}
+
+.subsec2 .shadowConatiner::before {
+    left: 0;
+    background: linear-gradient(90deg, rgba(244,0,0,1) 0%, rgba(0,0,0,0) 100%, rgba(0,0,0,0.3246090672597164) 100%);
+}
+
+.subsec2 .shadowConatiner::after {
+    right: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(244,0,0,1) 100%, rgba(0,0,0,0.3246090672597164) 100%);
+}
+.subsec2 .container .lib {
+    height: 100%;
+    min-width: 18vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .section2 {
+
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .section2 .part1 {
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .section2 .part1 .title {
+        flex: 0.5;
+        justify-content: center;
+
+    }
+
+    .section2 .part1 .title h1 {
+        font-size: 3rem;
+
+    }
+
+    .section2 .part1 .mySkill {
+        flex: 0.;
+
+    }
+
+    .section2 .part1 .mySkill .skillTitle {
+        flex: 0.1;
+    }
+
+    .section2 .part1 .mySkill .skills {
+        flex: 0.9;
+        padding: 10px;
+
+    }
+
+    .section2 .part1 .mySkill .skills div {
+        flex: 0.9;
+        min-width: 130px;
+        min-height: 150px;
+        max-width: 140px;
+        max-height: 150px;
+    }
+
+
+    .section2 .part2 {
+        width: 100%;
+        height: 100%;
+        margin: 30px;
+
+    }
+
+    .section2 .part2 .timeline .yearInfo {
+
+        min-height: 200px;
+    }
+
+    .section2 .part2 .timeline .dot span {
+        height: 50px;
+
+    }
+
+    .section2 .part2 .timeline .yearInfo .upsider {
+
+        top: 280px;
+
+    }
+
+    .subsec2 {
+        align-items: center;
+    }
+
+    .subsec2 .librariesTitle h1{
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 1rem;
+        font-size: 800;
+    }
+}

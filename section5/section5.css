@@ -1,0 +1,376 @@
+
+.section5 {
+    height: auto;
+    width: 100%;
+    background-color: #e7e4d8;
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    align-items: start;
+
+
+
+    
+}
+
+.section5 .part1 {
+    flex: 0.5;
+    height: 100%;
+    width: 100%;
+    background-color: #e7e4d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section5 .part1 .title {
+    flex: 0.2;
+    height: 100%;
+    width: 100%;
+    background-color: #e7e4d8;
+
+    display: flex;
+
+}
+
+.section5 .part1 .title h1 {
+    font-size: 6rem;
+    color: #da3926;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+.section5 .part1 .connectForm {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #e7e4d9;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-left: 2rem;
+    
+}
+
+
+form button {
+    overflow: visible;
+  }
+  
+form button, select {
+    text-transform: none;
+  }
+  
+ form button, input, select, textarea {
+    color: #5A5A5A;
+    font: inherit;
+    margin: 0;
+  }
+  
+  input {
+    line-height: normal; 
+  }
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  #container {
+   
+    max-width: 768px;
+    width: 100vw;
+   
+    position: relative;
+   
+  }
+  
+  
+ form h1 {
+    color: #474544;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+ form .underline {
+    border-bottom: solid 2px #474544;
+    margin: -0.512em auto;
+    width: 80px;
+  }
+  
+ form .icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+  }
+  
+ form .icon {
+    display: block;
+    fill: #474544;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+  }
+  
+ form .email {
+      float: right;
+      width: 45%;
+  }
+  
+ form input[type='text'], [type='email'], select, textarea {
+      background: none;
+    border: none;
+      border-bottom: solid 2px #474544;
+      color: #474544;
+      font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+      margin: 0em 0 1.875em 0;
+      padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+form  input[type='text']:focus, [type='email']:focus, textarea:focus {
+      outline: none;
+      padding: 0 0 0.875em 0;
+  }
+  
+form  .message {
+      float: none;
+  }
+  
+ form .name {
+      float: left;
+      width: 45%;
+  }
+  
+ form select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    
+  }
+  
+ form select::-ms-expand {
+    display: none;
+  }
+  
+ form .subject {
+    width: 100%;
+  }
+  
+ form .telephone {
+    width: 100%;
+  }
+  
+ form textarea {
+      line-height: 150%;
+      height: 150px;
+      resize: none;
+    width: 100%;
+  }
+  
+  ::-webkit-input-placeholder {
+      color: #474544;
+  }
+  
+  :-moz-placeholder { 
+      color: #474544;
+      opacity: 1;
+  }
+  
+  ::-moz-placeholder {
+      color: #474544;
+      opacity: 1;
+  }
+  
+  :-ms-input-placeholder {
+      color: #474544;
+  }
+  
+  #form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  #form_button:hover {
+    background: #474544;
+    color: #F2F3EB;
+  }
+  
+  .section5 .part2 {
+    flex: 0.5;
+    background-color: #e7e4d8;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section5 .part2 .circle-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section5 .part2 .circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .section5 .part2 .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    transform-origin: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    z-index: 2;
+  }
+  
+  .section5 .part2 .circle-container:hover .text {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .section5 .part2 .text span {
+    position: absolute;
+    display: inline-block;
+    transform-origin: center;
+  }
+
+.section5 .part2 .circle-container  .text span:nth-child(2) {
+     
+     
+  height: 30px;
+  width: 30px;
+  background-color: yellow;
+ 
+ 
+}
+
+.section5 .part2 .circle-container  .text span:nth-child(3) {
+ 
+ 
+  height: 30px;
+  width: 30px;
+  background-color: yellow;
+
+ 
+}
+.section5 .part2 .circle-container  .text span:nth-child(13) {
+ 
+ 
+  height: 30px;
+  width: 30px;
+  background-color: yellow;
+  
+ 
+}
+.section5 .part2 .circle-container  .text span:nth-child(14) {
+ 
+ 
+  height: 30px;
+  width: 30px;
+  background-color: yellow;
+  
+ 
+}
+
+
+.subsec5{
+ 
+  height: 10vh;
+  width: 100%;
+  background-color: #ffcc00;
+ 
+  position: relative;
+  overflow: visible;
+}
+
+.subsec5 svg{
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-color: black
+  ;
+  overflow: visible;
+}
+
+
+@media screen and (max-width:1200px) {
+    
+    .section5{
+        /* height: auto; */
+        flex-direction: column;
+    }
+ 
+    .section5 .part1 .title{
+        justify-content: center;
+    }
+    .section5 .part1 .title h1{
+        font-size: 4rem;
+        font-weight: 800;
+    }
+
+    #container {
+        
+        max-width: 768px;
+        width: auto;
+        
+        position: relative;
+       
+      }
+
+        
+  .section5 .part2 {
+  
+
+    min-width: 100vw;
+  
+  }
+}

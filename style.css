@@ -1,0 +1,148 @@
+:root {
+    --bg: #e7e4d8;
+    --title: #da3926;
+
+}
+
+/* WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #ff0000;
+    /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff0000;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Roundness of the scrollbar thumb */
+    border: 3px solid #ff0000;
+    /* Padding around the scrollbar thumb */
+}
+
+/* Firefox */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    cursor: none;
+    scrollbar-width: none;
+    /* Width of the scrollbar */
+    scrollbar-color: #888 #f0f0f0;
+    /* Color of the scrollbar thumb and track */
+}
+
+body {
+    height: auto;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: var(--bg) !important;
+    overflow-x: hidden !important;
+
+
+}
+
+
+.custom-cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgb(255, 255, 255);
+    /* Changed to white for better visibility */
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    mix-blend-mode: difference;
+    /* Changed to 'difference' for a contrasting effect */
+
+
+}
+
+div.window1 {
+    position: absolute;
+    top: -10rem;
+    height: 120vh;
+    width: 100vw;
+    background-color: #da3926;
+    z-index: 200;
+    overflow: hidden;
+}
+
+.preloader {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f000;
+    z-index: 201;
+
+}
+
+.line {
+    position: absolute;
+    width: 20%;
+    height: 4px;
+    background-color: #0000001a;
+    z-index: 202;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    --afterline: 0%;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    width: var(--afterline);
+    height: 4px;
+    background-color: #000000;
+}
+
+.line div {
+    position: absolute;
+    left: -10%;
+}
+
+.counter {
+    position: relative;
+    height: auto;
+    width: auto;
+
+
+
+    z-index: 205;
+    left: -11%;
+}
+
+div.window2 {
+    position: absolute;
+    top: -10rem;
+    height: 250vh;
+    width: 100vw;
+    background-color: #030000;
+    z-index: 199;
+    overflow: hidden;
+}
+
+div.window3 {
+    position: absolute;
+    top: -10rem;
+    height: 330vh;
+    width: 100vw;
+    background-color: orange;
+    z-index: 198;
+    overflow: hidden;
+}
