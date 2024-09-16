@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+
 }
 
 .section3 .part1 {
@@ -258,16 +258,17 @@
     .section3 .part1 .title {
         flex: 0.01;
         min-height: 55px;
-
         align-items: center;
+        position: relative;
 
     }
 
     .section3 .part1 .title h1 {
         font-size: 3rem;
         transform: rotate(360deg);
-        /* Remove relative positioning */
+        position: fixed;
         top: 0;
+
     }
 
 
@@ -336,10 +337,12 @@
 
     .pin {
         height: 100vh !important;
+        z-index: 0;
     }
 
     .pin-spacer {
-        height: 60vh !important;
+        height: 78vh !important;
+        z-index: 0;
     }
 
     .cursol .swiper {
