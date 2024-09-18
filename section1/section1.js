@@ -118,125 +118,125 @@ musicCanvas.addEventListener("click", () => {
     }
 });
 
-// var t1 = gsap.timeline();
+var t1 = gsap.timeline();
 
-// t1.from(".section1 .part2 .title h1", {
-//     opacity: 0,
-//     duration: 1,
-//     "transform": "rotate(0deg)",
-//     ease: "bounce.out",
-//     delay: 5.5,
-// });
+t1.from(".section1 .part2 .title h1", {
+    opacity: 0,
+    duration: 1,
+    "transform": "rotate(0deg)",
+    ease: "bounce.out",
+    delay: 5.5,
+});
 
-// t1.from(".section1 .hello", {
+t1.from(".section1 .hello", {
 
-//     duration: 0.5,
-//     opacity: 0,
-//     ease: "power4.out",
-// });
+    duration: 0.5,
+    opacity: 0,
+    ease: "power4.out",
+});
 
-// t1.from(".section1 .name", {
-//     duration: 0.5,
-//     opacity: 0,
-//     ease: "power4.out",
-// });
+t1.from(".section1 .name", {
+    duration: 0.5,
+    opacity: 0,
+    ease: "power4.out",
+});
 
-// t1.from(".section1 .profession", {
-//     duration: 0.5,
-//     opacity: 0,
-//     ease: "power4.out",
-// });
-// t1.from(".section1 .profession", {
-//     duration: 0.5,
-//     fontSize: "3rem",
-//     ease: "power4.out",
+t1.from(".section1 .profession", {
+    duration: 0.5,
+    opacity: 0,
+    ease: "power4.out",
+});
+t1.from(".section1 .profession", {
+    duration: 0.5,
+    fontSize: "3rem",
+    ease: "power4.out",
 
-// });
-// t1.from(".section1 .my", {
-//     duration: 0.8,
-//     opacity: 0,
-//     ease: "power4.out",
-// });
-// t1.from(".section1 .my", {
-//     duration: 0.6,
-//     x: -20,
-//     fontSize: "3.5rem",
-//     ease: "power4.out",
+});
+t1.from(".section1 .my", {
+    duration: 0.8,
+    opacity: 0,
+    ease: "power4.out",
+});
+t1.from(".section1 .my", {
+    duration: 0.6,
+    x: -20,
+    fontSize: "3.5rem",
+    ease: "power4.out",
 
-// });
-
-
-// t1.from(".section1 .part1 ", {
-//     duration: 0.5,
-
-//     opacity: 0,
-//     height: 0,
-//     width: 0,
-//     ease: "power4.out",
-// });
+});
 
 
-// t1.from(".nav", {
-//     duration: 0.5,
-//     y: -200,
-//     opacity: 1,
-//     ease: "power4.out",
+t1.from(".section1 .part1 ", {
+    duration: 0.5,
 
-// });
-// t1.from(".nav .logo", {
-//     duration: 0.5,
-
-//     opacity: 0,
-//     ease: "power4.out",
-
-// }, "-=0.2");
-// t1.from(".nav .list li", {
-//     duration: 0.5,
-//     y: -80,
-//     opacity: 0,
-//     ease: "power4.out",
-//     stagger: 0.2,
-// }, "-=0.2");
-
-// t1.from(".section1 button", {
-//     duration: 0.5,
-//     opacity: 0,
-//     ease: "power4.out",
-// }, "-=0.5");
-
-// t1.from(".section1 .social a", {
-//     duration: 0.5,
-//     opacity: 0,
-//     ease: "power4.out",
-//     stagger: 0.2,
-// }, "-=0.5");
+    opacity: 0,
+    height: 0,
+    width: 0,
+    ease: "power4.out",
+});
 
 
-// gsap.from(".subsec1 .musicText", {
-//     duration: 0.5,
-//     opacity: 0,
-//     ease: "power4.out",
-//     scrollTrigger: {
-//         trigger: ".subsec1",
-//         start: "top 50%",
-//         end: "bottom 90%",
+t1.from(".nav", {
+    duration: 0.5,
+    y: -200,
+    opacity: 1,
+    ease: "power4.out",
 
-//         scrub: false,
-//     }
-// })
+});
+t1.from(".nav .logo", {
+    duration: 0.5,
 
-// if (window.innerWidth > 768) {
+    opacity: 0,
+    ease: "power4.out",
+
+}, "-=0.2");
+t1.from(".nav .list li", {
+    duration: 0.5,
+    y: -80,
+    opacity: 0,
+    ease: "power4.out",
+    stagger: 0.2,
+}, "-=0.2");
+
+t1.from(".section1 button", {
+    duration: 0.5,
+    opacity: 0,
+    ease: "power4.out",
+}, "-=0.5");
+
+t1.from(".section1 .social a", {
+    duration: 0.5,
+    opacity: 0,
+    ease: "power4.out",
+    stagger: 0.2,
+}, "-=0.5");
 
 
-//     gsap.from(".subsec1 .musicText", {
-//         duration: 0.5,
-//         opacity: 0,
-//         ease: "power4.out",
-//         scrollTrigger: {
-//             trigger: ".subsec1",
-//             start: "top 50%",
-//             end: "bottom 90%",
-//             scrub: false,
-//         }
-//     })
-// }
+gsap.from(".subsec1 .musicText", {
+    duration: 1,
+    opacity: 0,
+    ease: "power4.out",
+    scrollTrigger: {
+        trigger: ".subsec1",
+        start: "top 50%",
+        end: "bottom 90%",
+
+        scrub: false,
+    }
+})
+
+if (window.innerWidth < 480) {
+
+
+    gsap.from(".subsec1 .musicText", {
+        duration: 0.5,
+        opacity: 0,
+        ease: "power4.out",
+        scrollTrigger: {
+            trigger: ".subsec1",
+            start: "top 50%",
+            end: "bottom 90%",
+            scrub: false,
+        }
+    })
+}
