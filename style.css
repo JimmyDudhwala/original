@@ -172,5 +172,10 @@ div.window3 {
     transition: 0.5s;
     border-radius: 50%;
 
+}
 
+@media screen and (max-width: 1200px) {
+    .link {
+        width: 20vw;
+    }
 }

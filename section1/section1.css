@@ -346,6 +346,13 @@
         height: 100%;
     }
 
+    .section1 .part2 .myInfo .myInfoContainer .my {
+
+        width: 285px;
+        height: 35px;
+        line-height: 35px;
+    }
+
 
 
     .section1 .part2 .myInfo .myInfoContainer div:nth-child(1) {
