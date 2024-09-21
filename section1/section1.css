@@ -44,7 +44,7 @@
     height: 90%;
     width: 60%;
 
-    background: var(--bg);
+    background: red;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -128,6 +128,25 @@
     font-size: 1.5rem;
     text-align: end;
 }
+
+.section1 .part2 .myInfo .myInfoContainer .my {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 435px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.section1 .part2 .myInfo .myInfoContainer .my span:nth-child(1) {
+    position: relative;
+    margin-top: 0px;
+
+}
+
+
 
 .section1 .part2 .myInfo .myInfoContainer div:nth-child(3) {
     background-color: #e7e4d8;

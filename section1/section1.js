@@ -157,12 +157,18 @@ t1.from(".section1 .my", {
     opacity: 0,
     ease: "power4.out",
 });
+
 t1.from(".section1 .my", {
     duration: 0.6,
     x: -20,
+    "width": "635px",
+    "height": "55px",
     fontSize: "3.5rem",
     ease: "power4.out",
 
+});
+t1.from(".section1 .my span:nth-child(1)", {
+    marginBottom: "30px",
 });
 
 
@@ -240,3 +246,14 @@ if (window.innerWidth < 480) {
         }
     })
 }
+
+const myName = document.querySelector(".my span:nth-child(1)");
+const mySpan = document.querySelector(".name");
+
+mySpan.addEventListener("mouseenter", () => {
+    gsap.to(myName, { duration: 0.5, marginTop: "-35px", ease: "power4.out" });
+});
+
+mySpan.addEventListener("mouseleave", () => {
+    gsap.to(myName, { duration: 0.5, marginTop: "0px", ease: "power4.out" });
+});

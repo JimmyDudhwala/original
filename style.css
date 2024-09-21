@@ -151,3 +151,26 @@ div.window3 {
     z-index: 198;
     overflow: hidden;
 }
+
+.link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    width: 5vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 199;
+    background-color: #f0f0f0;
+    font-size: 70%;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 50%;
+
+
+}

@@ -63,6 +63,35 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+const projects = document.querySelectorAll('.projectImage .images',);
+const link = document.querySelector(".link");
 
+projects.forEach(project => {
+  project.addEventListener('mouseenter', function () {
+    gsap.to(link, {
+      display: "flex",
+      duration: 0.5,
+      opacity: 0.5,
+    });
+  });
 
+  project.addEventListener('mousemove', function (e) {
 
+    const x = e.clientX
+    const y = e.clientY
+
+    gsap.to(link, {
+      duration: 0.1,
+      x: x,
+      y: y,
+    });
+  });
+
+  project.addEventListener('mouseleave', function () {
+    gsap.to(link, {
+      display: "none",
+      duration: 0.5,
+      opacity: 0,
+    });
+  });
+});
