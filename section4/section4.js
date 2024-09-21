@@ -6,11 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-var cursor = document.querySelector(".expCurs");
+var cursor = document.querySelector(".expCurs img");
+var exp = document.querySelector(".expCurs");
 var shouldFollow = false;
 
 function moveCircle(e) {
+    console.log(cursor)
     if (shouldFollow) {
         gsap.to(cursor, {
             x: e.clientX,
@@ -19,12 +20,14 @@ function moveCircle(e) {
             autoAlpha: 1,
             duration: 0.3
         });
-
     }
 }
+
 function enableFollow(imageUrl) {
+
     return function (e) {
-        cursor.style.backgroundImage = `url('${imageUrl}')`;
+        exp.style.display = 'block';
+        cursor.src = imageUrl;
         shouldFollow = true;
         moveCircle(e);
     };
@@ -32,13 +35,12 @@ function enableFollow(imageUrl) {
 
 function disableFollow() {
     shouldFollow = false;
-    cursor.style.backgroundImage = '';
+    cursor.src = '';
     gsap.to(cursor, { scale: 0.1, autoAlpha: 0, duration: 0.3 });
-
 }
 
 document.querySelectorAll(".e1, .e2").forEach(function (element) {
-    element.addEventListener("mouseenter", enableFollow(element.classList.contains('e1') ? 'INSERT_URL_FOR_E1_HERE' : 'INSERT_URL_FOR_E2_HERE'));
+    element.addEventListener("mouseenter", enableFollow(element.classList.contains('e1') ? '/assets/codeSoft.jpg' : '/assets/hpParam.jpg'));
     element.addEventListener("mousemove", moveCircle);
     element.addEventListener("mouseleave", disableFollow);
 });

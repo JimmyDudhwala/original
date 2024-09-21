@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const projects = document.querySelectorAll('.projectImage .images',);
+const projects = document.querySelectorAll('.projectImage .images, .part2 .swiper-slide',);
 const link = document.querySelector(".link");
 
 projects.forEach(project => {

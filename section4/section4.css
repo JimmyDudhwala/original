@@ -79,6 +79,14 @@
     color: #fff;
 }
 
+.section4 .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
 .section4 .swiper-slide:nth-child(1n) {
     background-color: rgb(206, 17, 17);
 }
@@ -136,25 +144,23 @@
 .section4 .part2 .expCurs {
 
     position: fixed;
-    /* Use fixed to keep the cursor in the correct position relative to the viewport */
     top: 0;
     left: 0;
     width: 500px;
-    /* Adjust size as needed */
     height: 300px;
-    /* Adjust size as needed */
-
-    background-color: red;
-    /* Change the color as needed */
     pointer-events: none;
-    /* Ensures the cursor doesn't interfere with other clickable elements */
     z-index: 3;
-    /* Ensures the cursor is above most other elements */
-    opacity: 0;
-    /* Start hidden, let GSAP control visibility */
     transform: translate(-10%, -10%);
-    /* Centers the cursor on mouse coordinates */
+    display: none;
 
+}
+
+.section4 .part2 .expCurs img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 
 }
 
