@@ -168,7 +168,7 @@ splittypes.forEach((element, index) => {
     t1.to(text.chars, {
         color: "red",
         duration: 1,
-        stagger: 1,
+        stagger: 5,
         ease: "power1.inOut",
         scrollTrigger: {
             trigger: ".subsec4",
