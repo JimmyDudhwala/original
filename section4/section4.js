@@ -40,7 +40,7 @@ function disableFollow() {
 }
 
 document.querySelectorAll(".e1, .e2").forEach(function (element) {
-    element.addEventListener("mouseenter", enableFollow(element.classList.contains('e1') ? '/assets/codeSoft.jpg' : '/assets/hpParam.jpg'));
+    element.addEventListener("mouseenter", enableFollow(element.classList.contains('e1') ? 'https://i.postimg.cc/cCcfxcym/codeSoft.jpg' : 'https://i.postimg.cc/9fqTR2Hz/hpParam.jpg'));
     element.addEventListener("mousemove", moveCircle);
     element.addEventListener("mouseleave", disableFollow);
 });
