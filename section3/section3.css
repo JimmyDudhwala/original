@@ -216,6 +216,12 @@
 
 }
 
+.cursol .part2 .swiper a {
+    text-decoration: none;
+    color: black;
+    font-size: 5rem;
+}
+
 .cursol .part2 .swiper-slide {
     height: 400px;
     width: 100px;
@@ -353,6 +359,11 @@
     .cursol .swiper-slide {
         max-height: 250px;
         min-width: 200px;
+    }
+
+    .cursol .part2 .swiper a {
+
+        font-size: 3rem;
     }
 
     .swiper-pagination {
