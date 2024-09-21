@@ -9,8 +9,6 @@ function formatTextInArc(container, text, radius) {
   const characters = text.split('');
   characters.push(''); // Add an empty character at the end
 
-  console.log(characters);
-
   const angleIncrement = 360 / characters.length;
 
   for (let index = 0; index < characters.length; index++) {

@@ -21,15 +21,15 @@ var t0 = gsap.timeline();
 
 const counter = document.querySelector('.counter');
 
-// Use GSAP to animate the counter from 0 to 99
+
 t0.to(counter, {
-  duration: 3, // Animation duration in seconds
-  innerHTML: 100, // Final value of the counter
-  roundProps: 'innerHTML', // Round the innerHTML property to the nearest whole number
+  duration: 3,
+  innerHTML: 100,
+  roundProps: 'innerHTML',
   "left": "12.5%",
-  // Easing function to use
+
   onUpdate: function () {
-    counter.textContent = Math.round(counter.innerHTML); // Update the displayed counter value
+    counter.textContent = Math.round(counter.innerHTML);
 
   },
 

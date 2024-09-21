@@ -140,26 +140,42 @@ gsap.from(".section4 .title h1", {
     },
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    gsap.registerPlugin(ScrollTrigger, SplitText);
 
-    const splitText = new SplitText(".AnimatedText h1", { type: "chars" });
-    const chars = splitText.chars;
+const splittypes = document.querySelectorAll(".AnimatedText h1");
 
-    console.log(chars);
+splittypes.forEach((element, index) => {
+    const text = new SplitType(element, {
+        types: "chars", // Ensure we are splitting into characters
+    });
 
-    gsap.from(chars, {
-        scrollTrigger: {
-            trigger: ".section4 .subsec4",
-            start: "top 80%", // Adjust as needed
-            end: "top 20%", // Adjust as needed
-            scrub: true, // Smooth scrubbing
-            markers: true // Remove this line in production
-        },
-        duration: 1, // Duration of the animation
+    const t1 = gsap.timeline();
+
+    t1.from(text.chars, {
         opacity: 0,
         y: 50,
-        stagger: 0.05, // Stagger the animation for each character
+        stagger: 0.05,
+        scrollTrigger: {
+            trigger: ".subsec4",
+            end: "top 20%",
+            scrub: true,
+            start: () => window.innerWidth < 768 ? "top 90%" : "top 80%", // Responsive start point
+            end: () => window.innerWidth < 768 ? "top 30%" : "top 20%", // Responsive end point
+        },
+        duration: 1,
         ease: "power1.inOut"
+    });
+
+    t1.to(text.chars, {
+        color: "red",
+        duration: 1,
+        stagger: 1,
+        ease: "power1.inOut",
+        scrollTrigger: {
+            trigger: ".subsec4",
+            start: () => window.innerWidth < 768 ? "bottom 90%" : "bottom 100%", // Responsive start point
+            end: () => window.innerWidth < 768 ? "bottom 85%" : "bottom 95%", // Responsive end point
+            scrub: true,
+
+        },
     });
 });

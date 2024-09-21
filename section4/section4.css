@@ -252,25 +252,15 @@
     z-index: 1;
 }
 
-.followerCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 2;
-    /* Canvas is above base and under upper element */
-    background-color: #ff0000;
-    /* Example background color for canvas */
-}
+
 
 .subsec4 .AnimatedText {
     z-index: 3;
-    text-align: center;
+    text-align: start;
 }
 
 .subsec4 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     margin: 0;
     color: white;
 }
@@ -369,7 +359,29 @@
 
     }
 
+    .subsec4 {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: black;
+        z-index: 1;
+        height: auto;
+    }
+
+
+
+    .subsec4 .AnimatedText {
+        z-index: 3;
+        text-align: start;
+    }
+
+
     .subsec4 div h1 {
-        font-size: 3rem;
+        font-size: 2.7rem;
+
     }
 }
