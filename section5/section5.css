@@ -346,7 +346,7 @@ form textarea {
 .subsec5 svg {
   position: absolute;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-color: black;
   overflow: visible;
 }

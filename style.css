@@ -33,9 +33,7 @@
     font-family: 'Poppins', sans-serif;
     cursor: none;
     scrollbar-width: none;
-    /* Width of the scrollbar */
     scrollbar-color: #888 #f0f0f0;
-    /* Color of the scrollbar thumb and track */
 }
 
 body {
@@ -59,14 +57,12 @@ a {
     width: 25px;
     height: 25px;
     border: 2px solid rgb(255, 255, 255);
-    /* Changed to white for better visibility */
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 101;
     mix-blend-mode: difference;
-    /* Changed to 'difference' for a contrasting effect */
 
 
 }

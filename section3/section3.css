@@ -1,37 +1,37 @@
-.section3 {
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.section3 {
     max-height: 80vh;
     width: 100%;
     background-color: #e7e4d8;
     position: relative;
-
-
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .section3 .part1 {
     flex: 1;
     background-color: #e7e4d8;
     height: 100%;
-
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .section3 .part1 .title {
     flex: 0.2;
     width: 100%;
     height: 100%;
-
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
     background-color: #e7e4d8;
     overflow: hidden;
 }
@@ -39,7 +39,6 @@
 .section3 .part1 .title h1 {
     font-size: 6rem;
     color: #da3926;
-
     transform: rotate(-90deg);
     position: relative;
     top: -160px;
@@ -49,12 +48,10 @@
     flex: 0.8;
     width: 100%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .section3 .part1 .project .projectContainer {
@@ -66,7 +63,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
 .section3 .part1 .project .projectContainer .projectSection {
@@ -88,15 +84,12 @@
     padding-top: 25px;
 }
 
-
 .section3 .part1 .project .projectContainer .projectScroller .projectTitle {
     flex: 0.2;
     background-color: #e7e4d8;
     height: 100%;
     font-size: 3rem;
     font-weight: 600;
-
-
 }
 
 .section3 .part1 .project .projectContainer .projectScroller .projectInfo {
@@ -107,19 +100,13 @@
     font-weight: 500;
 }
 
-
 .section3 .part1 .project .projectNumber {
-
     flex: 0.15;
     height: 100%;
-
     width: 100%;
     background-color: #e7e4d8;
     overflow: hidden;
-
 }
-
-
 
 .section3 .part1 .project .projectNumber div {
     flex: 1;
@@ -130,20 +117,17 @@
     justify-content: center;
     font-size: 5rem;
     font-weight: 700;
-
-
 }
-
 
 .section3 .part2 {
     flex: 1;
     background-color: #e7e4d8;
     height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .section3 .part2 .projectImage {
@@ -153,7 +137,6 @@
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden !important;
-
 }
 
 .section3 .part2 .projectImage .images {
@@ -164,11 +147,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
 }
 
 .section3 .part2 .projectImage .images img {
-
     z-index: 100 !important;
 }
 
@@ -177,21 +158,18 @@
 }
 
 .pin-spacer {
-    height: 85vh !important;
+    height: 60vh !important;
 }
-
 
 .cursol {
     height: auto;
     width: 100%;
     background-color: black;
     display: flex;
-
     flex-direction: column;
     margin-bottom: 50px;
     color: red;
     overflow: hidden;
-
 }
 
 .cursol .part1 {
@@ -205,15 +183,12 @@
 
 .cursol .part2 {
     flex: 0.5;
-
 }
 
 .cursol .part2 .swiper {
     width: 100%;
     height: 100%;
-
     margin-bottom: 50px;
-
 }
 
 .cursol .part2 .swiper a {
@@ -240,18 +215,13 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-
 }
 
-
-@media screen and (max-width:600px) {
-
-
+@media screen and (max-width: 600px) {
     .section3 {
         top: 5rem;
         flex-direction: column;
         height: auto;
-
     }
 
     .section3 .part1 {
@@ -266,7 +236,6 @@
         min-height: 55px;
         align-items: center;
         position: relative;
-
     }
 
     .section3 .part1 .title h1 {
@@ -274,9 +243,7 @@
         transform: rotate(360deg);
         position: fixed;
         top: 0;
-
     }
-
 
     .section3 .part1 .project {
         flex: 0.99;
@@ -287,8 +254,6 @@
         flex: 0.3;
         min-height: 28vh !important;
     }
-
-
 
     .section3 .part1 .project .projectContainer .projectSection {
         max-height: 28vh;
@@ -301,26 +266,19 @@
     }
 
     .section3 .part1 .project .projectContainer .projectScroller .projectTitle {
-
         font-size: 2rem;
         font-weight: 600;
-
-
     }
 
     .section3 .part1 .project .projectContainer .projectScroller .projectInfo {
-
-
         font-size: 1rem;
         font-weight: 100;
     }
-
 
     .section3 .part1 .project .projectNumber {
         flex: 0.7;
         max-height: 7.5vh;
         min-height: 7.5vh !important;
-
     }
 
     .section3 .part1 .project .projectNumber div {
@@ -333,7 +291,6 @@
         min-height: 50vh;
         justify-content: flex-start;
         padding-top: 2vh;
-
     }
 
     .section3 .part2 .projectImage {
@@ -362,13 +319,10 @@
     }
 
     .cursol .part2 .swiper a {
-
         font-size: 3rem;
     }
 
     .swiper-pagination {
         visibility: hidden;
     }
-
-
 }
